@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --black-low: #313846;
+    --black-mid: #272D38;
+    --black-high: #1F242D;
+
+    --grey-low: #FFFFFF;
+    --grey-mid: #DEDCDB;
+    --grey-high: #B4AFAD;
+
+    --red-low: #E28997;
+    --red-mid: #D34F64;
+    --red-high: #BA2E45;
+
+    --green-low: #42D0A8;
+    --green-mid: #2CAF8A;
+    --green-high: #238C6E;
+
+
+    --blue-low: #CFDCED;
+    --blue-mid: #8EADD5;
+    --blue-high: #5A87C2;
+}
+
+header {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+}
+
+a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+@media (max-width: 500px) {
+    header>nav {
+        display: none;
+    }
+
+}
