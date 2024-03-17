@@ -23,11 +23,28 @@
     --blue-high: #5A87C2;
 }
 
+h1 h2 h3 h4 h5 h6 {
+    color: var(--black-mid);
+}
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
 header {
     display: flex;
     padding: 40px;
     align-items: center;
     justify-content: space-between;
+}
+
+header>img {
+    width: 50px;
+    height: 50px;
 }
 
 header>nav {
@@ -36,7 +53,7 @@ header>nav {
     justify-content: center;
 }
 
-.menu {
+.nav-list {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -49,10 +66,137 @@ a {
     text-decoration: none;
 }
 
+.menu {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
 
+
+/* Fin de sección de la cabecera*/
+/* Inicio sección  del cuerpo */
+main {
+    padding: 40px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 16px;
+    padding: 20px;
+}
+
+.textos {
+    width: 100%;
+}
+
+.boton {
+    background-color: var(--blue-mid);
+    border: none;
+    color: var(--grey-low);
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+
+#imagen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#companies {
+    display: flex;
+}
+
+#companies>h3 {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.marcas {
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.marcas>img {
+    padding: 20px;
+    background-color: #f6f6f6;
+    color: #272D38;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+footer>section {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+
+    width: 100%;
+    justify-content: center;
+}
+
+footer>section>h1 {
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Media Querys*/
 @media (max-width: 500px) {
     header>nav {
         display: none;
     }
 
+    .menu {
+        display: block;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer>section {
+        flex-direction: column;
+    }
 }
